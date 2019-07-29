@@ -31,17 +31,18 @@
     </nav>
 
     <p>Enter an item to search for:</p>
-
+    <form method="POST" action="home.html">
     <div id="sites">
         <div class="d-flex flex-row">
-            <a href="website_pick.html" class="btn btn-light btn-lg">Next  →</a>
+            <button type="submit" href="home.html" class="btn btn-light btn-lg">Next  →</button>
         </div>
         <br>
         <div class="site input-group mb-3">
-            <input id="site" type="text" class="site form-control" placeholder="Item Name" aria-label="Item Name"
+            <input required id="site" type="text" class="site form-control" placeholder="Item Name" aria-label="Item Name"
                 aria-describedby="basic-addon2">
         </div>
     </div>
+    </form>
 
 
 

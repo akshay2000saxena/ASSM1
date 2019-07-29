@@ -31,18 +31,19 @@
     </nav>
 
     <p>Enter upto 3 websites to search for your item:</p>
-
+    <form method="POST" action="item_pick.html">
     <div id="sites">
         <div class="d-flex flex-row">
             <div> <button id="add" type="button" class="btn btn-light ml-3">＋</button></div>
-            <a href="item_pick.html" class="btn btn-light btn-lg">Next  →</a>
+            <button type="submit" href="item_pick.html" class="btn btn-light btn-lg">Next  →</button>
         </div>
         <br>
         <div class="site input-group mb-3">
-            <input id="site" type="text" class="site form-control" placeholder="Website Name" aria-label="Website Name"
+            <input required id="site" type="text" class="site form-control" placeholder="Website Name" aria-label="Website Name"
                 aria-describedby="basic-addon2">
         </div>
     </div>
+    </form>
 
 
 
