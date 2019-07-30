@@ -35,11 +35,11 @@
     <div id="sites">
         <div class="d-flex flex-row">
             <div> <button id="add" type="button" class="btn btn-light ml-3">＋</button></div>
-            <button type="submit" href="/item" class="btn btn-light btn-lg">Next  →</button>
+            <button id="next" type="submit" href="/item" class="btn btn-light btn-lg">Next  →</button>
         </div>
         <br>
         <div class="site input-group mb-3">
-            <input required id="site" type="text" class="site form-control" placeholder="Website Name" aria-label="Website Name"
+            <input name="web1" required id="web1" type="text" class="site form-control" placeholder="Website Name" aria-label="Website Name"
                 aria-describedby="basic-addon2">
         </div>
     </div>
@@ -60,7 +60,15 @@
         var count = 0;
         $(document).on('click', '#add', function () {
             clickFunc()
-            var html = '<div class="site input-group mb-3"><input type="text" class="form-control" placeholder="Website Name" aria-label="Website Name" aria-describedby="basic-addon2"> <div class="input-group-append"></div></div>'
+
+            if(count == 1) {
+                var html = '<div class="site input-group mb-3"><input name="web2" id="web2" type="text" class="form-control" placeholder="Website Name" aria-label="Website Name" aria-describedby="basic-addon2"> <div class="input-group-append"></div></div>'
+            }
+
+            if(count == 2) {
+                var html = '<div class="site input-group mb-3"><input name="web3" id="web3" type="text" class="form-control" placeholder="Website Name" aria-label="Website Name" aria-describedby="basic-addon2"> <div class="input-group-append"></div></div>'
+            }
+            console.log(count)
             $('#sites').append(html);
         });
 
@@ -72,7 +80,6 @@
             if (count >= 2)
                 btn.disabled = true;
         }
-
     </script>
 </body>
 

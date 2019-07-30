@@ -31,14 +31,14 @@
     </nav>
 
     <p>Enter an item to search for:</p>
-    <form method="GET" action="/">
+    <form method="GET" action="/display">
     <div id="sites">
         <div class="d-flex flex-row">
-            <button type="submit" href="/" class="btn btn-light btn-lg">Next  →</button>
+            <button type="submit" href="/display" class="btn btn-light btn-lg">Next  →</button>
         </div>
         <br>
         <div class="site input-group mb-3">
-            <input required id="site" type="text" class="site form-control" placeholder="Item Name" aria-label="Item Name"
+            <input name="item" required id="site" type="text" class="site form-control" placeholder="Item Name" aria-label="Item Name"
                 aria-describedby="basic-addon2">
         </div>
     </div>
