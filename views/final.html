@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="rows">
+        <div id="row1" class="flex-container"></div>
+        <div id="row2" class="flex-container"></div>
+        <div id="row3" class="flex-container"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+
+        var $title = document.querySelector('.title');
+
+        var i = [['Earrings', 'Sephora', 'https://www.claires.com/dw/image/v2/BBTK_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a985d71/images/hi-res/06681_1.jpg?sw=734&sh=734&sm=fit'], ['Earrings2', 'Sephora2', 'https://www.claires.com/dw/image/v2/BBTK_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a985d71/images/hi-res/06681_1.jpg?sw=734&sh=734&sm=fit'], ['Earrings3', 'Sephora3', 'https://www.claires.com/dw/image/v2/BBTK_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a985d71/images/hi-res/06681_1.jpg?sw=734&sh=734&sm=fit']]
+        var count = 3;
+
+        if (count == 1) {
+            $('#row1').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row1').append(html);
+            }
+        }
+        if (count == 2) {
+            $('#row1').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row1').append(html);
+            }
+
+            $('#row2').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row2').append(html);
+            }
+        }
+
+        if (count == 3) {
+            $('#row1').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row1').append(html);
+            }
+
+            $('#row2').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row2').append(html);
+            }
+
+            $('#row3').append('<h3>Sephora</h3>')
+            for (var j = 0; j < i.length; j++) {
+                var html = '<div class="card" style="width: 18rem;"><img class="card-img-top" src="' + i[j][2] + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + i[j][0] + '<span class="title"></span></h5><p class="card-text">Earrings by sephora.</p></div><div class="card-body"><a href="#" class="card-link">Bookmark</a><a href="#" class="card-link">Visit link</a></div></div>';
+                $('#row3').append(html);
+            }
+        }
+    </script>
+</body>
+
+<style>
+    .flex-container {
+        display: flex;
+    }
+</style>
+
+
+</html>
